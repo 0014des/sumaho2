@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>多機能スマホエミュレータ（自由ホーム画面）</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="phone" id="phone">
+    <div class="status-bar-top">
+      <div class="icon icon-signal"></div>
+      <div id="time-display">12:45</div>
+      <div class="icon icon-battery"></div>
+    </div>
+
+    <div class="screen">
+      <div class="url-bar" id="url-bar">https://example.com</div>
+      <div class="content" id="content-area"></div>
+    </div>
+
+    <div class="status-bar-bottom">
+      <button id="btn-home">Home</button>
+      <button id="btn-back">Back</button>
+      <select id="screen-size-select" title="画面サイズ切替">
+        <option value="mini">ミニスマホ</option>
+        <option value="phone" selected>スマホ</option>
+        <option value="tablet">タブレット</option>
+      </select>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
